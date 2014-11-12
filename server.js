@@ -11,7 +11,7 @@ var http = express();
 
 // set up a route to redirect http to https
 http.get('*',function(req,res){  
-    res.redirect('https://liberty.pw')
+    res.redirect('https://libertymutual.pw')
 })
 
 // have it listen on 80
