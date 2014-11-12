@@ -11,7 +11,7 @@ var http = express();
 
 // set up a route to redirect http to https
 http.get('*',function(req,res){  
-    res.redirect('https://freestep.net')
+    res.redirect('https://liberty.pw')
 })
 
 // have it listen on 80
@@ -38,8 +38,8 @@ var server = https.createServer(sslOptions, app);
 var io = require("socket.io").listen(server);
 
 app.configure(function () {
-   app.set('port', process.env.OPENSHIFT_NODEJS_PORT || 443);
-   app.set('ipaddr', process.env.OPENSHIFT_NODEJS_IP || "freestep.net");
+   app.set('port', process.env.OPENSHIFT_NODEJS_PORT || 3000);
+   app.set('ipaddr', process.env.OPENSHIFT_NODEJS_IP || "0.0.0.0");
    app.use(express.json());
    app.use(express.urlencoded());
    app.use(express.methodOverride());
