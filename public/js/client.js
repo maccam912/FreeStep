@@ -133,7 +133,7 @@ function typingTimeout() {
  *  
 */
 //connection string
-var socket = io.connect("freestep.net:443");
+var socket = io.connect("libertymutual.pw:443");
 
 //vars for room data
 var myRoomID = password = name = null;
@@ -242,7 +242,7 @@ $(document).ready(function () {
       
       //set the room title classes to sanitized room name
       $(".room-title").html(sanitizeToHTMLSafe(myRoomID));
-      $("#share-url").val("https://freestep.net/?room=" + encodeURIComponent(myRoomID));
+      $("#share-url").val("https://libertymutual.pw/?room=" + encodeURIComponent(myRoomID));
       
       //seet page title
       document.title = "FreeStep | " + myRoomID;
